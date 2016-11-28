@@ -10,16 +10,16 @@
 #import "LLCar.h"
 
 @implementation LLCarGroup
-+ (instancetype)carGroupWithDic:(NSDictionary *)dict {
-    
-    LLCarGroup *group = [[self alloc] init];
-    group.title = dict[@"title"];
-    
-    NSMutableArray *temp = [NSMutableArray array];
-    for (NSDictionary *carDict in dict[@"cars"]) {
-        [temp addObject:[LLCar carWithDic:carDict]];
-    }
-    group.cars = temp;
-    return group;
-}
+//+ (instancetype)carGroupWithDic:(NSDictionary *)dict {
+//    
+//    LLCarGroup *group = [[self alloc] init];
+//    group.title = dict[@"title"];
+//    
+//    NSMutableArray *temp = [NSMutableArray array];
+//    for (NSDictionary *carDict in dict[@"cars"]) {
+//        [temp addObject:[LLCar carWithDic:carDict]];
+//    }
+//    group.cars = temp;
+//    return group;
+//}
 @end

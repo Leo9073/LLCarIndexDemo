@@ -12,5 +12,5 @@
 @property (copy,nonatomic) NSString *title;
 @property (strong,nonatomic) NSArray *cars;
 
-+ (instancetype)carGroupWithDic:(NSDictionary *)dict;
+//+ (instancetype)carGroupWithDic:(NSDictionary *)dict;
 @end

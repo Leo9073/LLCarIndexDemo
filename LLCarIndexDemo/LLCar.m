@@ -9,10 +9,10 @@
 #import "LLCar.h"
 
 @implementation LLCar
-+ (instancetype)carWithDic:(NSDictionary *)dict {
-    
-    LLCar *car = [[self alloc] init];
-    [car setValuesForKeysWithDictionary:dict];
-    return car;
-}
+//+ (instancetype)carWithDic:(NSDictionary *)dict {
+//    
+//    LLCar *car = [[self alloc] init];
+//    [car setValuesForKeysWithDictionary:dict];
+//    return car;
+//}
 @end

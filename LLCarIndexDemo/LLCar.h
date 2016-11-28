@@ -12,5 +12,5 @@
 @property (copy,nonatomic) NSString *icon;
 @property (copy,nonatomic) NSString *name;
 
-+ (instancetype)carWithDic:(NSDictionary *)dict;
+//+ (instancetype)carWithDic:(NSDictionary *)dict;
 @end

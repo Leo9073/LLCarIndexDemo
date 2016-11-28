@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LLCar.h"
 #import "LLCarGroup.h"
+#import <MJExtension.h>
 
 static NSString *cellID = @"car";
 
@@ -24,12 +25,16 @@ static NSString *cellID = @"car";
 - (NSMutableArray *)carGroupArray {
     
     if (!_carGroupArray) {
-        NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"cars.plist" ofType:nil]];
-        NSMutableArray *temp = [NSMutableArray array];
-        for (NSDictionary *carGroupDict in dictArray) {
-            [temp addObject:[LLCarGroup carGroupWithDic:carGroupDict]];
-        }
-        _carGroupArray = temp;
+//        NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"cars.plist" ofType:nil]];
+//        NSMutableArray *temp = [NSMutableArray array];
+//        for (NSDictionary *carGroupDict in dictArray) {
+//            [temp addObject:[LLCarGroup carGroupWithDic:carGroupDict]];
+//        }
+        
+        [LLCarGroup mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"cars" : [LLCar class]};
+        }];
+        _carGroupArray = [LLCarGroup mj_objectArrayWithFilename:@"cars.plist"];
     }
     return _carGroupArray;
 }
