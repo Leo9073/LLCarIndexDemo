@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34DA93922FB4AF167CDCC7B3 /* libPods-LLCarIndexDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC2ABCEE72C1DFEC25F80D1 /* libPods-LLCarIndexDemo.a */; };
 		B340B8B01DEC0E0700E777E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B340B8AF1DEC0E0700E777E0 /* main.m */; };
 		B340B8B31DEC0E0700E777E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B340B8B21DEC0E0700E777E0 /* AppDelegate.m */; };
 		B340B8B61DEC0E0700E777E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B340B8B51DEC0E0700E777E0 /* ViewController.m */; };
 		B340B8B91DEC0E0700E777E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B340B8B71DEC0E0700E777E0 /* Main.storyboard */; };
 		B340B8BB1DEC0E0700E777E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B340B8BA1DEC0E0700E777E0 /* Assets.xcassets */; };
 		B340B8BE1DEC0E0700E777E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B340B8BC1DEC0E0700E777E0 /* LaunchScreen.storyboard */; };
+		B340B8C61DEC0E5000E777E0 /* cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = B340B8C51DEC0E5000E777E0 /* cars.plist */; };
+		B340B8C91DEC0F3A00E777E0 /* LLCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B340B8C81DEC0F3A00E777E0 /* LLCarGroup.m */; };
+		B340B8CC1DEC0F4900E777E0 /* LLCar.m in Sources */ = {isa = PBXBuildFile; fileRef = B340B8CB1DEC0F4900E777E0 /* LLCar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DC2ABCEE72C1DFEC25F80D1 /* libPods-LLCarIndexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLCarIndexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B85F9B4EC82A5397FE5BF9 /* Pods-LLCarIndexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLCarIndexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLCarIndexDemo/Pods-LLCarIndexDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B340B8AB1DEC0E0700E777E0 /* LLCarIndexDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLCarIndexDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B340B8AF1DEC0E0700E777E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B340B8B11DEC0E0700E777E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,12 @@
 		B340B8BA1DEC0E0700E777E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B340B8BD1DEC0E0700E777E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B340B8BF1DEC0E0700E777E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B340B8C51DEC0E5000E777E0 /* cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars.plist; sourceTree = "<group>"; };
+		B340B8C71DEC0F3A00E777E0 /* LLCarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCarGroup.h; sourceTree = "<group>"; };
+		B340B8C81DEC0F3A00E777E0 /* LLCarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCarGroup.m; sourceTree = "<group>"; };
+		B340B8CA1DEC0F4900E777E0 /* LLCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCar.h; sourceTree = "<group>"; };
+		B340B8CB1DEC0F4900E777E0 /* LLCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCar.m; sourceTree = "<group>"; };
+		D2A7C5AC50BA5AF140680880 /* Pods-LLCarIndexDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLCarIndexDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLCarIndexDemo/Pods-LLCarIndexDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DA93922FB4AF167CDCC7B3 /* libPods-LLCarIndexDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9715C7EBD9C50B8CFE2C41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DC2ABCEE72C1DFEC25F80D1 /* libPods-LLCarIndexDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5780A65B8A72BA35D21D29A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2A7C5AC50BA5AF140680880 /* Pods-LLCarIndexDemo.debug.xcconfig */,
+				A3B85F9B4EC82A5397FE5BF9 /* Pods-LLCarIndexDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B340B8A21DEC0E0600E777E0 = {
 			isa = PBXGroup;
 			children = (
 				B340B8AD1DEC0E0700E777E0 /* LLCarIndexDemo */,
 				B340B8AC1DEC0E0700E777E0 /* Products */,
+				5780A65B8A72BA35D21D29A3 /* Pods */,
+				3F9715C7EBD9C50B8CFE2C41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +94,11 @@
 				B340B8B21DEC0E0700E777E0 /* AppDelegate.m */,
 				B340B8B41DEC0E0700E777E0 /* ViewController.h */,
 				B340B8B51DEC0E0700E777E0 /* ViewController.m */,
+				B340B8C71DEC0F3A00E777E0 /* LLCarGroup.h */,
+				B340B8C81DEC0F3A00E777E0 /* LLCarGroup.m */,
+				B340B8CA1DEC0F4900E777E0 /* LLCar.h */,
+				B340B8CB1DEC0F4900E777E0 /* LLCar.m */,
+				B340B8C51DEC0E5000E777E0 /* cars.plist */,
 				B340B8B71DEC0E0700E777E0 /* Main.storyboard */,
 				B340B8BA1DEC0E0700E777E0 /* Assets.xcassets */,
 				B340B8BC1DEC0E0700E777E0 /* LaunchScreen.storyboard */,
@@ -86,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B340B8C21DEC0E0700E777E0 /* Build configuration list for PBXNativeTarget "LLCarIndexDemo" */;
 			buildPhases = (
+				9380ECCD0C532759D395CC03 /* [CP] Check Pods Manifest.lock */,
 				B340B8A71DEC0E0700E777E0 /* Sources */,
 				B340B8A81DEC0E0700E777E0 /* Frameworks */,
 				B340B8A91DEC0E0700E777E0 /* Resources */,
+				4B76AD69A98944153FF06219 /* [CP] Embed Pods Frameworks */,
+				25A38DF2BD4FCD829997BF3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +177,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				B340B8BE1DEC0E0700E777E0 /* LaunchScreen.storyboard in Resources */,
+				B340B8C61DEC0E5000E777E0 /* cars.plist in Resources */,
 				B340B8BB1DEC0E0700E777E0 /* Assets.xcassets in Resources */,
 				B340B8B91DEC0E0700E777E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25A38DF2BD4FCD829997BF3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLCarIndexDemo/Pods-LLCarIndexDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B76AD69A98944153FF06219 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLCarIndexDemo/Pods-LLCarIndexDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9380ECCD0C532759D395CC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B340B8A71DEC0E0700E777E0 /* Sources */ = {
@@ -151,7 +240,9 @@
 			files = (
 				B340B8B61DEC0E0700E777E0 /* ViewController.m in Sources */,
 				B340B8B31DEC0E0700E777E0 /* AppDelegate.m in Sources */,
+				B340B8C91DEC0F3A00E777E0 /* LLCarGroup.m in Sources */,
 				B340B8B01DEC0E0700E777E0 /* main.m in Sources */,
+				B340B8CC1DEC0F4900E777E0 /* LLCar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +352,7 @@
 		};
 		B340B8C31DEC0E0700E777E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A7C5AC50BA5AF140680880 /* Pods-LLCarIndexDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLCarIndexDemo/Info.plist;
@@ -272,6 +364,7 @@
 		};
 		B340B8C41DEC0E0700E777E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B85F9B4EC82A5397FE5BF9 /* Pods-LLCarIndexDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLCarIndexDemo/Info.plist;
@@ -300,6 +393,7 @@
 				B340B8C41DEC0E0700E777E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
